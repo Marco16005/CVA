@@ -1,0 +1,79 @@
+/* Custom styles for the page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-title {
+    color: #a0522d;
+}
+
+.form-group p {
+    font-weight: bold;
+    display: inline; /* Ensure the label and input are on the same line */
+}
+
+input[type="text"] {
+    width: 30px; /* Further reduced width */
+    height: 25px; /* Height remains the same */
+    padding: 2px; /* Adjusted padding */
+    margin: 0 2px; /* Adjusted margin to be closer to the words */
+    box-sizing: border-box;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    display: inline-block; /* Ensure the input is inline with the text */
+}
+
+input[type="text"]:focus {
+    border-color: #80bdff;
+    outline: none;
+}
+
+.score {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.text-center {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.choice .selection {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.choice .selection:hover {
+    background-color: #f1f1f1;
+}
+
+.response {
+    display: none;
+}
+
+.response.right {
+    color: green;
+}
+
+.response.wrong {
+    color: red;
+}
+
+/* Adjust the width of the gray squares */
+.gray-square {
+    width: 80%; /* Adjust this value as needed */
+    margin: 0 auto; /* Center the squares */
+    background-color: lightgrey; /* Ensure the background color is gray */
+    padding: 10px; /* Add some padding for better appearance */
+    border-radius: 5px; /* Optional: add rounded corners */
+}

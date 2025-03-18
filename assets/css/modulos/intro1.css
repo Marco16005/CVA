@@ -1,0 +1,23 @@
+.button-image {
+    height: 100px; /* Adjust the height as needed */
+    width: auto;
+    display: inline-block;
+    margin: 0 20px; /* Adjust the margin as needed for more space */
+    transition: box-shadow 0.3s ease; /* Smooth transition for the shadow effect */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.button-image:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Smoother shadow effect */
+    transform: scale(1.15); /* Grow the image by % */
+}
+
+.image-container2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.button-image {
+    transition: transform 0.4s ease-in-out; /* Smooth transition */
+}

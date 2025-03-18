@@ -1,0 +1,85 @@
+.flip-card {
+    background-color: transparent;
+    width: auto; /* Adjust width as needed */
+    perspective: 1000px;
+    margin-bottom: 25px; /* Add space between rows of cards */
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card-inner:hover {
+    cursor: pointer;
+    transform: rotateY(180deg); /* Ensure the card flips on hover */
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: transparent;
+    color: black;
+}
+
+.flip-card-back {
+
+    transform: rotateY(180deg);
+    text-align: center;
+}
+
+.flip-card-title {
+    background-color: var(--theme-color);
+    color: white;
+    font-size: 16px; /* Adjust font size as needed */
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.styleCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire card */
+}
+
+
+/* .img-fluid {
+    max-width: 100%;
+    height: auto;
+} */
+
+
+@media (max-width: 768px) {
+    .flip-card {
+        margin-bottom: 15px; /* Adjust space for smaller screens */
+        width: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .flip-card {
+        margin-bottom: 10px; /* Adjust space for extra small screens */
+        width: auto;
+    }
+}
